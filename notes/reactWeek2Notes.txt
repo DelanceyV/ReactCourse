@@ -1,0 +1,76 @@
+React
+
+Libraries vs Frameworks
+
+Inversion of Control 
+- Libraries: you have contol - you call the library when you want to use it
+- Frameworks: the framework has control and calls your code when needed
+    - the Hollywood principle - "don't call us, we'll call you"
+
+React - Defining features
+
+- Declarative vs Imperative Approach
+    - Declarative: you declare what you want to see, the React Handles updating the DOM in a consistent way.
+    - Imperative: you manipulate the DOM directly to create, insert, remove nodes and spel out every step yourself
+
+- Component-Based Approach
+    - encapsulates the UI into units called components 
+
+- Plays well with other technologies
+    - makes no assumptions about the rest of your tech stack - focuses on the UI and lets you decide the rest of the application architecture
+
+----
+
+JSX
+
+React.createElement()
+    - React.createElement("div",null,"Hello world!")
+
+react with JSX
+    - <div>Hello world!</div>
+
+There are differences between some of the syntax
+    - className instead of class
+    - htmlFor instead of for
+        - because class and for already have meaning in JavaScript
+
+component or JSX element??
+    - capitalized - component
+    - lowercase - element
+
+
+import and export keywords in JavaScript
+    - allow files to share data with eachother
+    - the shared data can be objects, primitives, and functions (including classes)
+    - two kinds of exports: named and default
+        - one file can have mady named exports but only one default export
+
+
+You can tell you're dealing with a react component because it will have brackets and a capital first letter
+    - eg: <App/>
+
+    - Think of react componenets as similar to functions - repeatable blocks of code
+    - Like a function, you define a React Component with one syntax then call it with another syntax
+    - Like functions, React Components are also defined in one way, then used/called when needed in another way
+    - But with components, we say you "render" the component instead of calling it - because components are units of
+        UI to be rendered to use the user's view 
+
+How to define a component
+Functional Component & Class Component
+
+    - Class Component
+    - use class keyword, along with the extends Component, to define a class component
+    - component names must be capitalized and contain a return statement - for class components, the return must be wrapped in a render() method
+
+        - class App extends Component {
+            render() {
+                return ( 
+                    <div>
+                        return statement must contain only one element
+                        this element may have as many children as you want but it may only be one element
+                    </div>
+                );
+            }
+        }
+
+    - to render these components you will use an html tag, usually a self closing one <App/>
