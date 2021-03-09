@@ -74,3 +74,9 @@ Functional Component & Class Component
         }
 
     - to render these components you will use an html tag, usually a self closing one <App/>
+
+----
+
+when selecting objects to change their state, do not use the = assigment operator to directly change the state 
+- always use setState
+

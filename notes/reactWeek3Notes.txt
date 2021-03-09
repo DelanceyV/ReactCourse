@@ -1,0 +1,25 @@
+Object Destructuring / Destructuring Assignment Syntax 
+
+- Introduced in ES6 
+- shortcut for accessing properties inside objects, or items inside arrays, then assigning them as values of new variables
+    
+    function logHotelInfo2({id, name, city}) {
+        console.log(`${id}: ${name} located in ${city}.`);}
+
+    is the same as ...
+
+    function logHotelInfo1(hotel) {
+        const id = hotel.id;
+        const name = hotel.name;
+        const city = hotel.city;
+        console.log(`${id}: ${name} located in ${city}.`);
+
+container components - fat / smart / stateful
+    - fetch and manage state data
+    - pass data to presentational components for rendering
+    - do not render UI
+
+Presentational Components - skinny / dumb / stateless
+    - render UI - markup, styles - based on props passed to them
+    - do not maintain their own state - only light UI state if any
+
