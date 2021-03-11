@@ -23,3 +23,22 @@ Presentational Components - skinny / dumb / stateless
     - render UI - markup, styles - based on props passed to them
     - do not maintain their own state - only light UI state if any
 
+Functional Components
+
+    - function Example(props){...}
+    - const Example = function(props){...}
+    - const Example = props => {...}
+
+    typically will only see declaration or arrow function
+        - need to have their first letter capitalized and need to pass props
+        - no render() method
+        - never have a constructor method
+        - cannot use lifecycle methods
+
+        function Example(props) {
+            return <div>{props.someDate}</div>;
+        }
+
+        - when you refer to props, you do not use the this keyword
+        - hooks - look them up
+        
