@@ -68,3 +68,15 @@ h2 {
   opacity: 0;
   transition: 300ms ease-in;
 }
+
+.animateTitle {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: rubberBand;
+  animation-duration: 2s;
+}
+
+.animateTitle:hover {
+  animation: none;
+}

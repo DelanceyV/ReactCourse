@@ -23,6 +23,7 @@ import { Control, LocalForm, Errors } from "react-redux-form";
 import { Loading } from "./LoadingComponent";
 import { baseUrl } from "../shared/baseUrl";
 import { FadeTransform, Fade, Stagger } from "react-animation-components";
+import { rubberBand } from "animate.css";
 
 const maxLength = (len) => (val) => !val || val.length <= len;
 const minLength = (len) => (val) => val && val.length >= len;
@@ -212,7 +213,7 @@ function CampsiteInfo(props) {
               </BreadcrumbItem>
               <BreadcrumbItem active>{props.campsite.name}</BreadcrumbItem>
             </Breadcrumb>
-            <h2>{props.campsite.name}</h2>
+            <h2 className="animateTitle">{props.campsite.name}</h2>
             <hr />
           </div>
         </div>

@@ -30,6 +30,7 @@ function RenderCard({ item, isLoading, errMess }) {
 }
 
 function Home(props) {
+  console.log(props);
   return (
     <div className="container">
       <div className="row">
@@ -48,7 +49,11 @@ function Home(props) {
           />
         </div>
         <div className="col-md m1">
-          <RenderCard item={props.partner} />
+          <RenderCard
+            item={props.partner}
+            isLoading={props.partnerLoading}
+            errMess={props.partnerErrMess}
+          />
         </div>
       </div>
     </div>
